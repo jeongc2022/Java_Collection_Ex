@@ -1,22 +1,25 @@
 
 public class Student {
-	public int StudentNum;
+	public int studentNum;
 	public String name;
 	
 	public Student(int studentNum, String name) {
-		this.StudentNum = studentNum;
+		this.studentNum = studentNum;
 		this.name = name;
 	}
 	
 	@Override
 	public int hashCode() {
 		// 코드 작성
-		return super.hashCode();
+		return studentNum;		// ref: 해시코드를 학번이라고 가정
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
 		// 코드 작성
-		return super.equals(obj);
+		if (!(obj instanceof Student)) return false; 
+		Student student = (Student)obj;
+		if (studentNum != student.studentNum) return false;
+		return true;
 	}
 }
