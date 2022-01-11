@@ -1,6 +1,6 @@
 package ex1;
 
-public class Board {		// 게시판 클래스 입니다.
+public class Board {		// 게시물 클래스
 	private String title;
 	private String content;
 	public Board(String title, String content) {

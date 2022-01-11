@@ -2,7 +2,7 @@ package ex1;
 
 import java.util.List;
 
-public class ListExample {		// BoardDao 사용자 클래스입니다.
+public class ListExample {		// BoardDao 사용자 클래스
 	public static void main(String[] args) {
 		BoardDao dao = new BoardDao();
 		List<Board> list = dao.getBoardList();

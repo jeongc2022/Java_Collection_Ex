@@ -1,6 +1,9 @@
 package ex1;
 
-public class BoardDao {		// 게시판 구현 클래스입니다.
-	
+import java.util.List;
+
+public class BoardDao {			// 게시물을 가져오는 클래스
+
 	// 정답을 적어주세요.
+	
 }
